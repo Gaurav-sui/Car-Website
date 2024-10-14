@@ -161,29 +161,6 @@
             display: none;
         }
 
-        .rating > label {
-            position: relative;
-            width: 1.1em;
-            font-size: 2rem;
-            color: #FFD700;
-            cursor: pointer;
-        }
-
-        .rating > label::before {
-            content: "\2605";
-            position: absolute;
-            opacity: 0;
-        }
-
-        .rating > label:hover:before,
-        .rating > label:hover ~ label:before {
-            opacity: 1 !important;
-        }
-
-        .rating > input:checked ~ label:before {
-            opacity: 1;
-        }
-
         button {
             background-color: #ff6b6b;
             color: white;
@@ -274,6 +251,7 @@
                 <li><a href="models.html">Models</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="ratings.html">Rate Us</a></li>
             </ul>
         </nav>
     </header>
@@ -307,62 +285,27 @@
                 <div class="team-member">
                     <img src="/placeholder.svg?height=150&width=150" alt="Gaurav Singh">
                     <h3>Gaurav Singh</h3>
-                    <p>Lead Developer</p>
+                    <p>Team Member</p>
                 </div>
                 <div class="team-member">
                     <img src="/placeholder.svg?height=150&width=150" alt="Daksh Saini">
                     <h3>Daksh Saini</h3>
-                    <p>UX Designer</p>
+                    <p>Team Member</p>
                 </div>
                 <div class="team-member">
                     <img src="/placeholder.svg?height=150&width=150" alt="Afif Rehman">
                     <h3>Afif Rehman</h3>
-                    <p>Backend Specialist</p>
+                    <p>Team Member</p>
                 </div>
                 <div class="team-member">
                     <img src="/placeholder.svg?height=150&width=150" alt="Aditya Kumar">
                     <h3>Aditya Kumar</h3>
-                    <p>Frontend Developer</p>
+                    <p>Team Member</p>
                 </div>
             </div>
         </section>
 
-        <section class="rating-form">
-            <h2>Rate Our Cars</h2>
-            <p>We value your feedback. Please take a moment to rate one of our models:</p>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="car-model">Select a model:</label>
-                    <select id="car-model" name="car-model" required>
-                        <option value="">Choose a model</option>
-                        <option value="compact">LuxeDrive Compact</option>
-                        <option value="city">LuxeDrive City</option>
-                        <option value="e-mini">LuxeDrive E-Mini</option>
-                        <option value="executive">LuxeDrive Executive</option>
-                        <option value="family">LuxeDrive Family</option>
-                        <option value="sport">LuxeDrive Sport</option>
-                        <option value="pinnacle">LuxeDrive Pinnacle</option>
-                        <option value="majestic">LuxeDrive Majestic</option>
-                        <option value="velocity">LuxeDrive Velocity</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Your rating:</label>
-                    <div class="rating">
-                        <input type="radio" id="star5" name="rating" value="5" required /><label for="star5" title="5 stars"></label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"></label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"></label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comments"></textarea>
-                </div>
-                <button type="submit">Submit Rating</button>
-            </form>
-        </section>
+        
     </main>
 
     <footer>
